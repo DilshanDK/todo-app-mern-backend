@@ -10,7 +10,7 @@ const app = express();
 const corsOptions = {
   origin: [
     'http://localhost:3000',
-    'https://todo-app-frontend.onrender.com' // Add your frontend URL
+    'https://todo-app-mern-frontend-d3ig.onrender.com' // Add your frontend URL
   ],
   credentials: true
 };
