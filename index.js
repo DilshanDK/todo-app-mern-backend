@@ -47,6 +47,12 @@ app.get('/health', (req, res) => {
   });
 });
 
+// Test CORS endpoint
+app.get('/api/test', (req, res) => {
+  console.log('✅ [DEBUG] CORS is working! Frontend can connect.');
+  res.json({ message: 'CORS is working correctly' });
+});
+
 // Mount the routes at /api/todos
 app.use('/api/todos', todoRoutes);
 console.log('📝 [DEBUG] Routes mounted at /api/todos');
